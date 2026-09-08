@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Time – Hindi Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+
+  <!-- ================= HOME SCREEN ================= -->
+  <section id="screen-home" class="screen active">
+    <img class="gov-logo" src="logo1.png" alt="Income Tax Department emblem">
+    <div class="back-btn disabled" role="button" tabindex="0" aria-label="No previous screen" aria-disabled="true">
+      <svg viewBox="0 0 24 24"><path d="M15 4 5 12l10 8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="corner-signature">त्रिगुणसेन पंडित, वरिष्ठ अनुवाद अधिकारी</div>
+
+    <h1 class="pixel-title"><span class="title-hi-line">सामान्य ज्ञान प्रश्नोत्तरी(GK Quiz)</span>HINDI QUIZ</h1>
+    <button class="pixel-btn" id="btn-start">START</button>
+
+    <div class="sunflower" style="bottom:70px; left:6%;">
+      <div class="stem"></div>
+      <div class="leaf l1"></div>
+      <div class="leaf l2"></div>
+      <div class="bloom"></div>
+    </div>
+    <div class="mountains"></div>
+    <div class="ground"></div>
+  </section>
+
+  <!-- ================= LEVEL SELECT SCREEN ================= -->
+  <section id="screen-levels" class="screen">
+    <div class="back-btn" id="btn-back-to-home" role="button" tabindex="0" aria-label="Back to home">
+      <svg viewBox="0 0 24 24"><path d="M15 4 5 12l10 8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="corner-signature">त्रिगुणसेन पंडित, वरिष्ठ अनुवाद अधिकारी</div>
+
+    <div class="panel">
+      <div class="panel-header">SELECT A LEVEL</div>
+      <div class="level-grid" id="level-grid"></div>
+    </div>
+    <div class="ground"></div>
+  </section>
+
+  <!-- ================= QUESTION SCREEN ================= -->
+  <section id="screen-question" class="screen">
+    <img class="watermark-logo" src="logo.png" alt="">
+    <div class="back-btn" id="btn-back-to-levels" role="button" tabindex="0" aria-label="Back to level select">
+      <svg viewBox="0 0 24 24"><path d="M15 4 5 12l10 8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="corner-signature">त्रिगुणसेन पंडित, वरिष्ठ अनुवाद अधिकारी</div>
+
+    <div class="q-wrap">
+      <div class="q-text" id="q-text"></div>
+      <div class="options" id="q-options"></div>
+      <div class="lifeline-row">
+        <button class="lifeline-btn" id="btn-answer" type="button">Answer</button>
+        <button class="lifeline-btn" id="btn-5050" type="button">50-50</button>
+      </div>
+      <div class="feedback" id="q-feedback" role="status" aria-live="polite"></div>
+    </div>
+
+    <div class="ground"></div>
+  </section>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
